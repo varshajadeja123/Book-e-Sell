@@ -83,30 +83,3 @@ export const MainNavigation = () => {
     </Routes>
   );
 };
-
-
-// import React from "react";
-// import { Navigate, Route, Routes } from "react-router-dom";
-// import {Login} from "../pages/login";
-// import Register from "../pages/register";
-// import { RoutePaths } from "../utils/enum";
-// import { useAuthContext } from "../constant/context/auth";
-// import BookListing from "../pages/book-listing";
-
-// // const Home = ()=>{
-// //   return <>Home</>
-// // }
-// const Redirect = (props)=>{
-//   return props.isLoggedIn ? <props.component/> : <Navigate to={RoutePaths.Login}/>
-// }
-
-// export const MainNavigation = () => {
-//   const authContext = useAuthContext()
-//   return (
-//     <Routes>
-//       <Route exact path={RoutePaths.Login} element={<Login />} />
-//       <Route exact path={RoutePaths.Register} element={<Register />} />
-//       <Route exact path={RoutePaths.BookListing} element={<Redirect isLoggedIn = {!!authContext.user.id} component={BookListing} />} />
-//     </Routes>
-//   );
-// };
